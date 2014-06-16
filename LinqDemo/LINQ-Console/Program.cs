@@ -19,6 +19,9 @@ namespace LINQ_Console
             var takeSkip = new TakeAndSkip();
             Console.WriteLine(takeSkip.ForOutput);
 
+            var elementOps = new ElementOperators();
+            Console.WriteLine(elementOps.ForOutput);
+
             EndMessage();
         }
 
