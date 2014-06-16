@@ -1,22 +1,35 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LINQ_Console
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-
-            Basics1 basics = new Basics1();
+            var basics = new Basics1();
             Console.WriteLine(basics.ForOutput);
 
-            Projecting projecting = new Projecting();
+            SpacingMessage();
+
+            var projecting = new Projecting();
             Console.WriteLine(projecting.ForOutput);
 
+            SpacingMessage();
+
+            var takeSkip = new TakeAndSkip();
+            Console.WriteLine(takeSkip.ForOutput);
+
+            EndMessage();
+        }
+
+        private static void SpacingMessage()
+        {
+            Console.WriteLine(" ");
+        }
+
+
+        private static void EndMessage()
+        {
             Console.WriteLine("Press the Enter key to exit");
             Console.ReadLine();
         }
